@@ -17,13 +17,7 @@ jQuery(function($) {
         var index = 0,
             extension = '',
             playing = false,
-            tracks = [{
-                "name": "Oh Wonder - Shark (Illenium Remix)",
-                "artist": "ILLENIUM",
-                "cover": "https://i1.sndcdn.com/artworks-000094845967-6wb79s-t500x500.jpg",
-                "source": "./songs/OhWonderSharkIlleniumRemix.mp3",
-                "favorited": "false"
-            }, ],
+            tracks = {payload},
 
             buildPlaylist = $.each(tracks.sort(() => Math.random() - 0.5), function(key, value) {
                 var trackName = value.name,
